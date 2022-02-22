@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sample_01</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #111;
+      }
+
+      h1 {
+        color: #fff;
+      }
+
+      .img {
+        width: 400px;
+        height: 400px;
+        background-color: black;
+        margin: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 999px;
+        box-shadow: 0px 0px 4px 4px rgb(51, 50, 50);
+        cursor: pointer;
+      }
+
+      img {
+        margin-top: 50px;
+        margin-bottom: 10px;
+        width: 150px;
+        height: 180px;
+        cursor: pointer;
+      }
+
+      .btn {
+        width: 100%;
+        height: 10vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      }
+
+      button {
+        margin: 10px 50px;
+        border: 3px solid #ddd;
+        background-color: rgb(187, 198, 207);
+        border-radius: 10px;
+        padding: 10px;
+        color: black;
+        font-weight: bold;
+        font-size: 3vh;
+        cursor: pointer;
+        transition-duration: 1s;
+      }
+
+      button:hover {
+        background-color: black;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>This Is My First Sample Of Javascript...!</h1>
+
+    <div class="img">
+      <img src="/img/pic_bulboff.gif" alt="error" id="img" />
+    </div>
+
+    <div class="btn">
+      <button
+        class="btn_on"
+        onclick="document.getElementById('img').src='/img/pic_bulbon.gif'"
+      >
+        On Bulb
+      </button>
+      <button
+        class="btn_off"
+        onclick="document.getElementById('img').src='/img/pic_bulboff.gif'"
+      >
+        Off Bulb
+      </button>
+    </div>
+  </body>
+</html>
